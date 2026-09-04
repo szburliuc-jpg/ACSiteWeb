@@ -6,7 +6,6 @@
     <title>Ghid Culinar - Negresă clasică</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
     <header>
@@ -15,17 +14,30 @@
     </header>
 
     <main>
+        <!-- COLOANA STÂNGĂ: Prezentare & Rețetă -->
         <section>
             <h2>Negresă Clasică cu Ciocolată</h2>
             <p>Această rețetă este extrem de ușor de preparat, fiind perfectă pentru începători.</p>
-            
-            <!-- Imagine -->
-           <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=800&q=80" alt="Negresă cu ciocolată" class="recipe-img">
+            <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=800&q=80" alt="Negresă cu ciocolată" class="recipe-img">
         </section>
 
+        <!-- COLOANA DREAPTĂ: Formular Interactiv (JS) -->
+        <section>
+            <h3>Adaugă o Notă / Rețetă Nouă</h3>
+            <form id="add-card-form">
+                <label for="card-title">Titlu:</label>
+                <input type="text" id="card-title" required placeholder="Ex: Negresă cu nucă">
+
+                <label for="card-desc">Descriere:</label>
+                <textarea id="card-desc" rows="3" required placeholder="Ex: Adăugați și praf de copt..."></textarea>
+
+                <button type="submit">Adaugă Card</button>
+            </form>
+        </section>
+
+        <!-- COLOANA STÂNGĂ: Ingrediente -->
         <section>
             <h3>Ingrediente Necesare</h3>
-            <!-- Listă -->
             <ul>
                 <li>200g zahăr</li>
                 <li>200g făină</li>
@@ -36,9 +48,9 @@
             </ul>
         </section>
 
+        <!-- COLOANA DREAPTĂ: Tabel Nutrițional -->
         <section>
             <h3>Informații Nutriționale</h3>
-            <!-- Tabel -->
             <table>
                 <thead>
                     <tr>
@@ -63,50 +75,23 @@
             </table>
         </section>
 
-        <section>
-            <h3>Trimite-ne Opinia Ta</h3>
-            <!-- Formular -->
-            <form action="#" method="post">
-                <label for="nume">Numele tău:</label>
-                <input type="text" id="nume" name="nume" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="mesaj">Comentariu:</label>
-                <textarea id="mesaj" name="mesaj" rows="4"></textarea>
-
-                <button type="submit">Trimite</button>
-            </form>
+        <!-- SECȚIUNE PE TOATĂ LĂȚIMEA: Cardurile generate dinamic -->
+        <section class="full-width">
+            <h3>Notițe & Rețete Salvate</h3>
+            <div id="cards-container" class="cards-grid"></div>
         </section>
 
-        <section>
-    <h3>Adaugă o Notă / Rețetă Nouă</h3>
-    <form id="add-card-form">
-        <label for="card-title">Titlu:</label>
-        <input type="text" id="card-title" name="card-title" placeholder="Ex: Negresă cu nuci" required>
-
-        <label for="card-desc">Descriere:</label>
-        <textarea id="card-desc" name="card-desc" rows="3" placeholder="Ex: Adaugă 50g de nucă tăiată fin în compoziție..." required></textarea>
-
-        <button type="submit">Adaugă Card</button>
-    </form>
-
-    <div id="cards-container" class="cards-grid"></div>
-</section>
-
-<script src="script.js"></script>
-
-        <section>
+        <!-- SECȚIUNE PE TOATĂ LĂȚIMEA: Linkuri -->
+        <section class="full-width">
             <h3>Resurse Utile</h3>
-            <!-- Link -->
             <p>Vezi mai multe rețete pe site-ul <a href="https://www.google.com" target="_blank">ReteteSimple.ro</a>.</p>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Bucătăria Simplă. Toate drepturile rezervate.</p>
+        <p>&copy; 2026 Bucătăria Simplă. Proiect ASCW.</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
