@@ -6,6 +6,7 @@
     <title>Ghid Culinar - Negresă clasică</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <header>
@@ -78,6 +79,23 @@
                 <button type="submit">Trimite</button>
             </form>
         </section>
+
+        <section>
+    <h3>Adaugă o Notă / Rețetă Nouă</h3>
+    <form id="add-card-form">
+        <label for="card-title">Titlu:</label>
+        <input type="text" id="card-title" name="card-title" placeholder="Ex: Negresă cu nuci" required>
+
+        <label for="card-desc">Descriere:</label>
+        <textarea id="card-desc" name="card-desc" rows="3" placeholder="Ex: Adaugă 50g de nucă tăiată fin în compoziție..." required></textarea>
+
+        <button type="submit">Adaugă Card</button>
+    </form>
+
+    <div id="cards-container" class="cards-grid"></div>
+</section>
+
+<script src="script.js"></script>
 
         <section>
             <h3>Resurse Utile</h3>
