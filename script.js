@@ -23,7 +23,12 @@ document.addEventListener('DOMContentLoaded', () => {
             card.innerHTML = `
                 <h4>${titleText}</h4>
                 <p>${descText}</p>
+                <button class="delete-btn">Șterge</button>
             `;
+
+card.querySelector('.delete-btn').addEventListener('click', () => {
+    card.remove();
+});
 
             // Adăugăm cardul în containerul din pagină
             cardsContainer.appendChild(card);
