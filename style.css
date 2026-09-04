@@ -3,12 +3,13 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
-    color: #333;
+    /* Culoare fundal stil Cappuccino / Cafea cu lapte */
+    background-color: #e8dcc4; 
+    color: #3e2723;
 }
 
 header {
-    background-color: #4a2c2a;
+    background-color: #4e342e;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -18,8 +19,9 @@ main {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background: #fff;
+    background: #fdfbf7; /* Crem deschis pentru contrast ușor */
     border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
 }
 
 .recipe-img {
@@ -35,7 +37,7 @@ table {
 }
 
 table, th, td {
-    border: 1px solid #ddd;
+    border: 1px solid #d7ccc8;
 }
 
 th, td {
@@ -44,7 +46,7 @@ th, td {
 }
 
 th {
-    background-color: #4a2c2a;
+    background-color: #4e342e;
     color: white;
 }
 
@@ -57,25 +59,25 @@ form {
 
 input, textarea, button {
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #bcaaa4;
     border-radius: 4px;
 }
 
 button {
-    background-color: #4a2c2a;
+    background-color: #4e342e;
     color: white;
     border: none;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #6b3e3b;
+    background-color: #3e2723;
 }
 
 footer {
     text-align: center;
     padding: 15px;
-    background-color: #333;
+    background-color: #2c1d1a;
     color: white;
     margin-top: 20px;
 }
